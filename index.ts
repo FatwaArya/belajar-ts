@@ -76,7 +76,7 @@ console.log("Enum Array : ", DataEnum[0]);
 
 async function getUsers() {
   try {
-    const { data, status } = await axios.get<getUserAxios>(
+    const { data, status } = await axios.get<User[]>(
       "https://jsonplaceholder.typicode.com/users",
       {
         headers: {
